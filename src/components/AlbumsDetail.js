@@ -2,6 +2,7 @@ import React from 'react';
 import {View,Text, Image} from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 //create component
 const AlbumDetail = ({ album_from_albumlist }) => {
@@ -29,6 +30,9 @@ return (
                 style={imageStyle}
             source = {{uri: image}}
             />
+        </CardSection>
+        <CardSection>
+            <Button onPress ={() => console.log(title)}/>
         </CardSection>
     </Card>
 );
