@@ -1,4 +1,4 @@
-// /** @format */
+ // /** @format */
 //
 // import {AppRegistry} from 'react-native';
 // import App from './App';
@@ -8,13 +8,17 @@
 
 
 import React from 'react';
-import {Text, AppRegistry} from 'react-native';
+import {Text,View, AppRegistry} from 'react-native';
 import Hearder from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
-//create a componet
-const App = () => (
-    <Hearder/>
-);
+ //create a componet
+ const App = () => (
+     <View style={{flex:1}}>
+         <Hearder nametoview={'Albums1'}/>
+      <AlbumList/>
+     </View>
+ );
 
 
-AppRegistry.registerComponent('demo',() => App);
+AppRegistry.registerComponent('demo',()  => App);
