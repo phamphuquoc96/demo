@@ -7,7 +7,7 @@ import AlbumDetail from './AlbumsDetail';
 class AlbumList extends Component {
 
     //
-    state = { albums: [] };
+    state = { albums: [],  };
 
 
     componentWillMount(){
